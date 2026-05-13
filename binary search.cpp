@@ -12,7 +12,6 @@ int main() {
 
     int n = names.size();
 
-
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (names[j] > names[j + 1]) {
@@ -21,7 +20,6 @@ int main() {
             }
         }
     }
-
 
     string searchKey;
     cout << "Enter a name to search for: ";
@@ -43,7 +41,6 @@ int main() {
             high = mid - 1;
         }
     }
-
 
     if (foundIndex != -1) {
         cout << "Member found: " << names[foundIndex] << " is aged " << ages[foundIndex] << endl;
